@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Planner</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(to right, #b290e4, #f3bcd9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-wrapper {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(12px);
+      width: 100%;
+      max-width: 420px;
+    }
+
+    .form-title {
+      font-size: 22px;
+      font-weight: 600;
+      color: #fff;
+      text-align: left;
+      margin-bottom: 25px;
+      border-left: 4px solid #4a54e1;
+      padding-left: 12px;
+    }
+
+    label {
+      color: #fff;
+      font-size: 14px;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: none;
+      font-size: 14px;
+      color: #333;
+    }
+    .search {
+            background: rgb(24, 75, 120);
+            color: white;
+            border: none;
+            font-size: 18px;
+            border-radius: 30px;
+            padding: 12px 24px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        .search:hover {
+            background: rgb(155, 117, 145);
+            transform: scale(1.05); }
+  </style>
+</head>
+<body>
+  <div class="form-wrapper">
+    <div class="form-title">WHERE WOULD YOU LIKE TO GO ?</div>
+    <form>
+      <label for="from">From</label>
+      <input type="text" id="from" placeholder="Enter departure city" />
+
+      <label for="to">To</label>
+      <input type="text" id="to" placeholder="Enter destination city" />
+      <button type="button"class="search" onclick="window.location.href='mark.html';">search</button>
+    </form>
+  </div>
+</body>
+</html>
